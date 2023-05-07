@@ -3,3 +3,4 @@
 # @Author  : Mat
 # @Email   : mat_wu@163.com
 # @File    : master.py
+print('master')
