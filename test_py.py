@@ -5,10 +5,15 @@ def dog():
     print('dog')
 
 
-def main():
-    if sys.argv[0] == 'dog':
-        dog()
+def cat():
+    print('cat')
 
+
+def main():
+    if sys.argv[0] == 'cat':
+        cat()
+    else:
+        dog()
 
 if __name__ == 'main':
     main()
