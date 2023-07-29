@@ -11,7 +11,7 @@ Features:
 1. Input box for jumping to image by name.
 
 2. The app will automatically resume from the image that was last viewed by user, which is a good feature if the app crashed or closed unintentionally.
-If you want to resume from the first image, you can use the "Start from First" button.
+If you want to start from the first image, you can use the "Start from First" button.
 '''
 
 import pickle
