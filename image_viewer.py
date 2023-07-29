@@ -1,3 +1,19 @@
+'''
+dependency:
+pip3 install PySide2
+
+shortcuts:
+"[" -> last image
+"]" -> next image
+"\" -> delete image
+
+Features:
+1. Input box for jumping to image by name.
+
+2. The app will automatically resume from the image that was last viewed by user, which is a good feature if the app crashed or closed unintentionally.
+If you want to resume from the first image, you can use the "Start from First" button.
+'''
+
 import pickle
 import os
 import sys
@@ -74,7 +90,8 @@ class ImageViewer(QMainWindow):
         self.start_from_first_button = QPushButton("Start from First")
         self.start_from_first_button.clicked.connect(self.start_from_first)
 
-        self.jump_to_input = IgnoreKeysLineEdit(ignored_keys=[Qt.Key_BracketLeft, Qt.Key_BracketRight, Qt.Key_Backslash])
+        self.jump_to_input = IgnoreKeysLineEdit(
+            ignored_keys=[Qt.Key_BracketLeft, Qt.Key_BracketRight, Qt.Key_Backslash])
         self.jump_to_input.setReadOnly(True)
 
         button_layout = QHBoxLayout()
